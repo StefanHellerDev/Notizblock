@@ -20,17 +20,24 @@
 <body onload="init()">
 
   <h1>Notizblock</h1>
-
-  Title: <input id="noteTitleInput" type="text"><br>
-  Note: <input id="noteInput" type="text">
-  <button onclick="addNote()">Titel und Notiz speichern</button>
+  <div class="input">
+    <div>
+      Title:<br>
+      Note:
+    </div>
+    <div class="inputFields">
+      <input id="noteTitleInput" type="text"><br>
+      <input id="noteInput" type="text"><br>
+      <button onclick="addNote()">Titel und Notiz speichern</button>
+    </div>
+  </div>
 
   <h2>Notes</h2>
-  <main id="content"></main>
-  <br>
+  <main class="notes" id="content"></main>
+
   <h2>Papierkorb</h2>
-  <main id="trash_content"></main>
-  <br><br>
+  <main class="notes" id="trash_content"></main>
+
   <h3>Archiv</h3>
   <button onclick="archiveNotes()">Alle Notizen archivieren</button>
 

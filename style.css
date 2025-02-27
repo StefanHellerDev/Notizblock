@@ -1,0 +1,55 @@
+body {
+  font-family: "Roboto", sans-serif;
+  /* width: 100%; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+h2 {
+  padding-top: 16px;
+}
+
+h3 {
+  padding-top: 16px;
+}
+
+.input {
+  display: flex;
+}
+
+.inputFields {
+  padding-left: 8px;
+}
+
+.notes {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px;
+  gap: 16px;
+}
+
+.displayNote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 160px;
+  width: 160px;
+  background-color: rgb(43, 40, 40);
+  color: whitesmoke;
+  border-radius: 16px;
+}
+
+.noteTitle {
+  padding-top: 8px;
+  /* padding-bottom: 32px; */
+  font-weight: bold;
+}
+
+.noteButtons {
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}

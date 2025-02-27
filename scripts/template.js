@@ -1,7 +1,20 @@
 function getNoteTemplate(indexNote) {
-  return `<p>+ Title: ${notesTitles[indexNote]} --> ${notes[indexNote]} <button class="btn" onclick="pushToTrash(${indexNote})">X</button></p>`;
+  return `<div class="displayNote">
+    <p class="noteTitle">${notesTitles[indexNote]}</p>
+    <p>${notes[indexNote]}</p>
+    <div ="noteButtons">
+      <button class="btn" onclick="pushToTrash(${indexNote})">X</button>
+    </div>
+  </div>`;
 }
 
 function getTrashNoteTemplate(indexTrashNote) {
-  return `<p>+ Title: ${trashNotesTitles[indexTrashNote]} --> ${trashNotes[indexTrashNote]} <button onclick="restoreTrashedNote(${indexTrashNote})">Wiederherstellen</button> <button class="btn" onclick="deleteNote(${indexTrashNote})">X</button></p>`;
+  return `<div class="displayNote">
+  <p class="noteTitle">${trashNotesTitles[indexTrashNote]}</p>
+  <p>${trashNotes[indexTrashNote]}</p>
+  <div ="noteButtons">
+    <button onclick="restoreTrashedNote(${indexTrashNote})">N</button>
+    <button class="btn" onclick="deleteNote(${indexTrashNote})">X</button>
+  </div>
+  </div>`;
 }
